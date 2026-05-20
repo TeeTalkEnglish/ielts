@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Topic 1 - Starting Business</title>
+
+  <link rel="stylesheet" href="../../style.css">
+
+  <style>
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .left, .right {
+      flex: 1;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 60px;
+      margin-top: 6px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    .output {
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 10px;
+      min-height: 300px;
+      line-height: 1.6;
+    }
+
+    .question {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    .output strong {
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1>💼 Starting a Business</h1>
+  <p>IELTS Real-Time Structure Practice</p>
+</header>
+
+<div class="container">
+
+  <!-- LEFT INPUT -->
+  <div class="left card">
+    <div class="question">
+      Have you ever thought about starting your own business? How did it make you feel?
+    </div>
+
+   <label>Business Idea</label>
+<textarea id="idea" oninput="updateLive()" placeholder="e.g. online English tutoring / coffee shop / TikTok business"></textarea>
+
+<label>Emotion 1</label>
+<textarea id="emotion1" oninput="updateLive()" placeholder="e.g. excited / motivated / confident"></textarea>
+
+<label>Reason Emotion 1</label>
+<textarea id="reason1" oninput="updateLive()" placeholder="e.g. I believe it has high demand / I enjoy teaching people"></textarea>
+
+<label>Emotion 2</label>
+<textarea id="emotion2" oninput="updateLive()" placeholder="e.g. nervous / unsure / overwhelmed"></textarea>
+
+<label>Reason Emotion 2</label>
+<textarea id="reason2" oninput="updateLive()" placeholder="e.g. I lack experience / I am still learning how to manage time"></textarea>
+
+<label>Main Challenge</label>
+<textarea id="challenge" oninput="updateLive()" placeholder="e.g. time management / lack of confidence / financial risk"></textarea>
+
+<label>Action</label>
+<textarea id="action" oninput="updateLive()" placeholder="e.g. I am learning step by step / I am practicing daily / I am researching online"></textarea>
+  </div>
+
+  <!-- RIGHT OUTPUT -->
+  <div class="right card">
+    <h3>🧠 IELTS Structure Preview</h3>
+
+    <div class="output" id="output">
+      Yes, I have thought about starting a business in [your idea].
+
+      At first, I felt [emotion] because [reason].
+
+      However, I also felt [emotion] because [reason].
+
+      Over time, I realised my main challenge is [challenge], and I am working on it by [action].
+    </div>
+  </div>
+
+</div>
+
+<script src="../../script.js"></script>
+
+</body>
+</html>
