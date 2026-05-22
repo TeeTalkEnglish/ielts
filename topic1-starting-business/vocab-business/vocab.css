@@ -1,0 +1,187 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#071a2b;
+  color:white;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  min-height:100vh;
+}
+
+/* =========================
+   PHONE LAYOUT
+========================= */
+
+.phone{
+  width:100%;
+  max-width:430px;
+
+  min-height:100vh;
+
+  padding:18px;
+
+  overflow-y:auto;
+
+  background:linear-gradient(
+    180deg,
+    #24B7BD 0%,
+    #1699a0 40%,
+    #0f172a 100%
+  );
+}
+
+/* =========================
+   TITLE
+========================= */
+
+h1{
+  text-align:center;
+
+  margin-bottom:22px;
+
+  font-size:28px;
+  font-weight:800;
+
+  color:white;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table{
+  width:100%;
+
+  border-collapse:collapse;
+}
+
+th, td{
+  border:1px solid rgba(255,255,255,0.1);
+
+  padding:10px;
+
+  text-align:left;
+  vertical-align:middle;
+}
+
+th{
+  background:rgba(255,255,255,0.14);
+
+  color:white;
+
+  font-size:13px;
+}
+
+td{
+  background:rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(8px);
+
+  font-size:13px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+img{
+  width:60px;
+  height:60px;
+
+  object-fit:cover;
+
+  border-radius:12px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.basic{
+  color:white;
+
+  font-weight:700;
+
+  line-height:1.4;
+}
+
+.vn{
+  font-size:11px;
+
+  opacity:0.85;
+
+  margin-top:4px;
+
+  color:#e8f7f8;
+}
+
+.answer-cell{
+  background:#0f172a;
+
+  color:#0f172a;
+
+  cursor:pointer;
+
+  border-radius:12px;
+
+  text-align:center;
+
+  font-weight:800;
+
+  font-size:14px;
+
+  padding:16px;
+
+  border:2px solid rgba(255,255,255,0.08);
+
+  transition:0.25s ease;
+}
+
+.answer-cell:hover{
+  transform:scale(1.03);
+}
+
+/* AFTER REVEAL */
+
+.answer-cell.revealed{
+  background:white;
+
+  color:#24B7BD;
+
+  border:2px solid white;
+
+  box-shadow:
+    0 0 16px rgba(255,255,255,0.28);
+}
+
+/* =========================
+   WATERMARK
+========================= */
+
+.watermark{
+  text-align:center;
+
+  margin-top:26px;
+  padding-bottom:10px;
+
+  font-size:14px;
+  font-weight:700;
+
+  letter-spacing:1px;
+
+  color:rgba(255,255,255,0.35);
+
+  text-transform:uppercase;
+}

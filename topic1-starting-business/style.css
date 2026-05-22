@@ -1,0 +1,255 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#071a2b;
+  color:white;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+  text-align:center;
+
+  padding:32px 20px;
+
+  background:linear-gradient(
+    180deg,
+    #24B7BD 0%,
+    #14838a 100%
+  );
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.18);
+}
+
+.header h1{
+  font-size:38px;
+  font-weight:800;
+
+  margin-bottom:10px;
+}
+
+.header p{
+  opacity:0.9;
+
+  font-size:16px;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container{
+  max-width:1100px;
+
+  margin:auto;
+
+  padding:24px;
+
+  display:flex;
+
+  gap:22px;
+}
+
+.left,
+.right{
+  flex:1;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+  background:rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(10px);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:24px;
+
+  padding:22px;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.18);
+}
+
+/* =========================
+   QUESTION
+========================= */
+
+.question{
+  font-size:20px;
+
+  font-weight:700;
+
+  line-height:1.5;
+
+  margin-bottom:20px;
+}
+
+/* =========================
+   LABELS
+========================= */
+
+label{
+  display:block;
+
+  margin-top:16px;
+  margin-bottom:6px;
+
+  font-size:14px;
+  font-weight:700;
+
+  color:white;
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+textarea{
+  width:100%;
+
+  min-height:70px;
+
+  padding:14px;
+
+  border-radius:16px;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  background:rgba(255,255,255,0.08);
+
+  color:white;
+
+  resize:vertical;
+
+  font-size:14px;
+
+  outline:none;
+
+  transition:0.2s ease;
+}
+
+textarea::placeholder{
+  color:rgba(255,255,255,0.45);
+}
+
+textarea:focus{
+  border:1px solid #24B7BD;
+
+  box-shadow:
+    0 0 12px rgba(36,183,189,0.35);
+}
+
+/* =========================
+   STRUCTURE PREVIEW
+========================= */
+
+.preview-title{
+  margin-bottom:18px;
+
+  font-size:22px;
+  font-weight:800;
+}
+
+.output{
+  background:rgba(255,255,255,0.08);
+
+  border-radius:18px;
+
+  padding:20px;
+
+  min-height:320px;
+
+  line-height:1.9;
+
+  font-size:16px;
+}
+
+.output strong{
+  color:#24B7BD;
+
+  font-weight:800;
+}
+
+/* =========================
+   WATERMARK
+========================= */
+
+.watermark{
+  margin-top:24px;
+
+  text-align:center;
+
+  font-size:14px;
+  font-weight:800;
+
+  letter-spacing:1px;
+
+  color:rgba(255,255,255,0.4);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:900px){
+
+  .container{
+    flex-direction:column;
+  }
+
+  .header h1{
+    font-size:30px;
+  }
+
+}
+
+/* =========================
+   VOCAB BUTTON
+========================= */
+
+.vocab-btn{
+  display:block;
+
+  margin-bottom:20px;
+
+  text-align:center;
+
+  text-decoration:none;
+
+  background:#24B7BD;
+
+  color:white;
+
+  padding:14px;
+
+  border-radius:16px;
+
+  font-weight:800;
+
+  transition:0.25s ease;
+
+  box-shadow:
+    0 8px 20px rgba(36,183,189,0.28);
+}
+
+.vocab-btn:hover{
+  transform:translateY(-2px);
+
+  background:#1ea6ac;
+}
